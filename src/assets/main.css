@@ -1,0 +1,50 @@
+@import './base.css';
+
+body {  
+  overflow: auto;  
+  background-size: cover;  
+  
+}
+
+.modules-container{
+  margin: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.module{
+  border: 1px solid white;
+  width:200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .versions {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .tip,
+  .actions {
+    display: none;
+  }
+}
+
+.green-button { 
+  background-color: var(--green);
+
+}
+
+.blue-button {
+  background-color: var(--blue);
+}
