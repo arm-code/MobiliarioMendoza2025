@@ -10,7 +10,13 @@ export const HomeContainer = styled.div`
   height: 100vh;  
   color: var(--black);
   text-align: center;
+  margin-top: 80px;
   padding: 20px;  
+  
+  img {
+    height: 200px;
+    
+  }
   
 `;
 
@@ -86,4 +92,7 @@ export const PageContainer = styled.div`
 export const Module = styled.div`
   background-color: var(--gray-3);
   padding: 15px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 `

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Module, PageContainer } from "../../home/Home.styles";
+import {ProductCard} from "../productCard/ProductCard";
 
 export const ProductosPage = () => {
   const [productos, setProductos] = useState([]); // Estado para guardar los productos
@@ -36,12 +37,8 @@ export const ProductosPage = () => {
         <p>No hay productos disponibles.</p>
       )} {/* Mostrar mensaje si no hay productos */}
       <Module>
-        {productos.map((producto) => (
-          <div key={producto.id} style={{ marginBottom: "1em" }}>
-            <h2>{producto.nombre_producto}</h2>
-            <p>Precio: ${producto.precio}</p>
-            <p>{producto.description}</p>
-          </div>
+        {productos.map((producto, index) => (
+          <ProductCard key={index} producto = {producto}/>
         ))}
       </Module>
     </PageContainer>
