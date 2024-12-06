@@ -38,8 +38,8 @@ export const ProductosPage = () => {
       <Module>
         {productos.map((producto) => (
           <div key={producto.id} style={{ marginBottom: "1em" }}>
-            <h2>{producto.name}</h2>
-            <p>Precio: ${producto.price}</p>
+            <h2>{producto.nombre_producto}</h2>
+            <p>Precio: ${producto.precio}</p>
             <p>{producto.description}</p>
           </div>
         ))}
