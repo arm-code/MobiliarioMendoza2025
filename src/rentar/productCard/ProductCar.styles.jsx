@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductCardContainer= styled.div`
     
     width: 400px;
-    height: 400px;
+    height: 250px;
     minWidth: 300px;
     text-align: center;
     background-color: var(--white);

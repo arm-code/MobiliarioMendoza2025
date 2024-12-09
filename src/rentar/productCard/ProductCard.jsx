@@ -8,12 +8,12 @@ export const ProductCard = ({producto}) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     
     const openModal = () => setIsModalOpen(true)
-    const closeModal = () => setIsModalOpen(false)
+    const closeModal = () => setIsModalOpen(false)    
 
   return (
     <ProductCardContainer>
-        <h2>{producto.nombre_producto}</h2>
-        <h2>${producto.precio}</h2>
+        <h2>{producto.nombre}</h2>        
+        <h2>${producto.precio_renta || producto.precio}</h2>
         <button className="blue-button">Subir a la troca</button>
         <button className="green-button" onClick={openModal}>Ver detalles</button>
 
