@@ -123,7 +123,7 @@ Please change the parent <Route path="${c}"> to <Route path="${c==="/"?"*":`${c}
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-`,Pg="/assets/MobiNBG2-DyvH3wEN.png",_g=()=>L.jsxs(xg,{children:[L.jsx(kg,{children:"RENTA DE MESAS Y SILLAS"}),L.jsx(Eg,{children:"Para todo tipo de eventos."}),L.jsx("hr",{className:"line"}),L.jsx("br",{}),L.jsx("p",{children:"Mobiliario Mendoza"}),L.jsx("img",{src:Pg,alt:""})]}),Rg=ne.div`
+`,Pg=""+new URL("MobiNBG2-DyvH3wEN.png",import.meta.url).href,_g=()=>L.jsxs(xg,{children:[L.jsx(kg,{children:"RENTA DE MESAS Y SILLAS"}),L.jsx(Eg,{children:"Para todo tipo de eventos."}),L.jsx("hr",{className:"line"}),L.jsx("br",{}),L.jsx("p",{children:"Mobiliario Mendoza"}),L.jsx("img",{src:Pg,alt:""})]}),Rg=ne.div`
     
     width: 400px;
     height: 250px;
