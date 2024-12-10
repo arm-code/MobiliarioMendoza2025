@@ -92,6 +92,12 @@ body {
   align-items: flex-start;
 }
 
+.form-control-centered{
+  display: flex;
+  gap: 15px;
+  align-items: center;  
+}
+
 .form-control-inverse{
   display: flex;
   flex-direction: column;
@@ -133,5 +139,10 @@ body {
 
 .line {
   width: 90%;
+}
+
+.line-separated-top {
+  width: 90%;
+  margin-top: 4rem;
 }
 
