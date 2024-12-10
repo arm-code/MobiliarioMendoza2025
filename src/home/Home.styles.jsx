@@ -7,10 +7,10 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;  
+  
   color: var(--black);
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
   padding: 20px;  
   
   img {
@@ -23,8 +23,13 @@ export const HomeContainer = styled.div`
 // Estilos para el título
 export const Title = styled.h1`
   font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-weight: 800;  
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+`;
+
+export const Title2 = styled.h1`
+  font-size: 2rem;
+  font-weight: 600;  
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
@@ -32,8 +37,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   font-size: 1.5rem;
   max-width: 600px;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+  line-height: 1.5;  
   opacity: 0.9;
 `;
 
@@ -87,6 +91,7 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px; 
+  margin-top: 80px;
 `
 
 export const Module = styled.div`

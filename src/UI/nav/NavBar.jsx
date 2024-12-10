@@ -16,10 +16,10 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink 
-            to="/rentar" 
+            to="/productos" 
             className={({ isActive }) => (isActive ? 'active-link' : '')}
           >
-            Rentar
+            Catalogo
           </NavLink>
         </li>
               

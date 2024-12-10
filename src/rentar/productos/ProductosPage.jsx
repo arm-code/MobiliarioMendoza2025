@@ -48,7 +48,7 @@ export const ProductosPage = () => {
   return (
     <PageContainer>
       <h1>Nuestros productos individuales</h1>
-      {loading && <p>Cargando productos...</p>} 
+      {loading && <p>Cargando productos... por favor espere.</p>} 
       {error && <p>Error: {error}</p>}
       {!loading && !error && productos.length === 0 && (
         <p>No hay productos disponibles.</p>
@@ -59,7 +59,7 @@ export const ProductosPage = () => {
         ))}
       </Module>
       <h1>Nuestros paquetes</h1>
-      {loading && <p>Cargando paquetes...</p>} 
+      {loading && <p>Cargando paquetes... por favor espere.</p>} 
       {error && <p>Error: {error}</p>}
       {!loading && !error && productos.length === 0 && (
         <p>No hay paquetes disponibles.</p>
