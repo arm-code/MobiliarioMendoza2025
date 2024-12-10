@@ -47,7 +47,7 @@ export const ProductosPage = () => {
   // Renderizado
   return (
     <PageContainer>
-      <h1>Nuestros productos</h1>
+      <h1>Nuestros productos individuales</h1>
       {loading && <p>Cargando productos...</p>} 
       {error && <p>Error: {error}</p>}
       {!loading && !error && productos.length === 0 && (
@@ -58,6 +58,12 @@ export const ProductosPage = () => {
           <ProductCard key={index} producto = {producto}/>
         ))}
       </Module>
+      <h1>Nuestros paquetes</h1>
+      {loading && <p>Cargando paquetes...</p>} 
+      {error && <p>Error: {error}</p>}
+      {!loading && !error && productos.length === 0 && (
+        <p>No hay paquetes disponibles.</p>
+      )}
       <Module>
       {packs.map((pack, index) => (
           <ProductCard key={index} producto = {pack}/>
